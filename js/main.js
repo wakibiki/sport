@@ -12,6 +12,7 @@ $(document).scroll(function(){
 });
 
 $('.video_slider').slick({
+  autoplay: true,
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,

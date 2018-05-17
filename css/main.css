@@ -307,7 +307,7 @@ a:focus {
 /* home video section */
 .home_video_section {
 	background: #ffbb12;
-	padding: 40px 0 60px 100px;
+	padding: 40px 0 60px 8%;
 	overflow: hidden;
 }
 
@@ -372,6 +372,10 @@ a:focus {
 
 .home_video_section .video-modal .fa:hover {
 	color: #363636;
+}
+
+.brand_slider {
+	background: #fff;
 }
 
 .slick-prev:before,
@@ -647,6 +651,9 @@ a:focus {
 	.home_video_section h2 {
 		font-size: 40px;
 	}
+	.home_video_section {
+		padding-left: 50px;
+	}
 
 	.players-section h2 {
 		font-size: 40px;
@@ -663,6 +670,10 @@ a:focus {
 
 	.players-section .newsletter h4 {
 		font-size: 18px;
+	}
+
+	.news-wrap h3 {
+		font-size: 24px;
 	}
 
 	.footer-bottom {
