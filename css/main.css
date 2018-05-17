@@ -403,6 +403,11 @@ a:focus {
 	padding: 0 10px;
 }
 
+.brand_slider h2 {
+	color: #e7e7e7;
+	opacity: 1;
+}
+
 /* players section */
 .players-section {
 	padding: 80px 0 0;
