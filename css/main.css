@@ -307,7 +307,7 @@ a:focus {
 /* home video section */
 .home_video_section {
 	background: #ffbb12;
-	padding: 40px 0 60px 8%;
+	padding: 40px 0 60px 0;
 	overflow: hidden;
 }
 
@@ -374,10 +374,6 @@ a:focus {
 	color: #363636;
 }
 
-.brand_slider {
-	background: #fff;
-}
-
 .slick-prev:before,
 .slick-next:before{
 	font-size: 28px;
@@ -401,11 +397,6 @@ a:focus {
 .slick-next:before {
 	border: 1px solid #000;
 	padding: 0 10px;
-}
-
-.brand_slider h2 {
-	color: #e7e7e7;
-	opacity: 1;
 }
 
 /* players section */
@@ -495,11 +486,15 @@ a:focus {
 	border-radius: 10px;
 }
 
-.players-section .newsletter {
+.newsletter_section {
+	overflow: hidden;
+}
+
+.newsletter_form {
 	padding: 40px 0;
 }
 
-.players-section .newsletter h4 {
+.newsletter_form h4 {
 	margin-bottom: 15px;
 	font-size: 20px;
 	color: #e7e7e7;
@@ -507,7 +502,7 @@ a:focus {
 	text-transform: uppercase;
 }
 
-.players-section .newsletter .form-control {
+.newsletter_form .form-control {
 	background: transparent;
 	border-radius: 0;
 	border-color: #fff;
@@ -516,24 +511,37 @@ a:focus {
 	color: #e7e7e7;
 }
 
-.players-section .newsletter .btn {
+.newsletter_form .btn {
 	background: #f1f9fe;
 	border-radius: 0;
 	padding: 11px 20px;
 	transition: all 0.3s ease;
 }
 
-.players-section .newsletter .btn:hover {
+.newsletter_form .btn:hover {
 	background: #ffbb12;
 }
 
-.players-section .newsletter .btn:hover .fa {
+.newsletter_form .btn:hover .fa {
 	color: #fff;
 }
 
-.players-section .newsletter .fa {
+.newsletter_form .fa {
 	font-size: 20px;
 	color: #000;
+}
+
+.our_sponsers {
+	position: relative;
+	z-index: -1;
+}
+
+.our_sponsers img {
+	width: 192px;
+	height: 
+	 -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.52;
 }
 
 .footer {
@@ -656,9 +664,6 @@ a:focus {
 	.home_video_section h2 {
 		font-size: 40px;
 	}
-	.home_video_section {
-		padding-left: 50px;
-	}
 
 	.players-section h2 {
 		font-size: 40px;
@@ -673,7 +678,7 @@ a:focus {
 		font-size: 14px;
 	}
 
-	.players-section .newsletter h4 {
+	.newsletter_form h4 {
 		font-size: 18px;
 	}
 
@@ -779,9 +784,6 @@ a:focus {
 		background: #fff;
 	}
 
-	.home_video_section {
-		padding-left: 15px;
-	}
 
 	.about_us {
 		padding: 0;
@@ -851,18 +853,18 @@ a:focus {
 		font-size: 18px;
 	}
 
-	.players-section .newsletter {
+	.newsletter_form {
 		margin: 0 -9999px;
 		padding: 40px 9999px;
 		background: #0a0e34;
 		border-top: 1px solid #f5f6f7;
 	}
 
-	.players-section .newsletter h4 {
+	.newsletter_form h4 {
 		font-size: 16px;
 	}
 
-	.players-section .newsletter .form-control {
+	.newsletter_form .form-control {
 		font-size: 16px;
 	}
 
@@ -908,9 +910,6 @@ a:focus {
 }
 
 @media(max-width: 479px) {
-	.home_video_section .video_slider {
-		padding-left: 0;
-	}
 	.footer-bottom .col-xs-4,
 	.footer-bottom .col-xs-8 {
 		width: 100%;
