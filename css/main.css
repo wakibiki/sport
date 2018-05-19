@@ -24,7 +24,7 @@ a:focus {
 	box-shadow: none;
 }
 
-.main-wrapper {
+.wrapper {
 	overflow: hidden;
 }
 
@@ -232,7 +232,7 @@ a:focus {
 /* news section */
 .news-section {
 	background: #f1f9fe;
-	padding: 40px 0;
+	padding: 40px 0 20px;
 	position: relative;
 }
 
@@ -254,9 +254,9 @@ a:focus {
 }
 
 .news-header .news_arrow {
-	    position: absolute;
-    right: 15px;
-    top: 0;
+	position: absolute;
+	right: 15px;
+	top: 0;
 }
 
 .news-header img {
@@ -401,7 +401,7 @@ a:focus {
 
 /* players section */
 .players-section {
-	padding: 80px 0 0;
+	padding: 80px 0 55px;
 	background: #fff;
 	position: relative;
 	overflow: hidden;
@@ -410,7 +410,8 @@ a:focus {
 .players-section img {
 	width: 100%;
 	position: absolute;
-	top: -33px;
+	bottom: -20px;
+	left: 115%;
 	z-index: 9;
 }
 
@@ -533,15 +534,25 @@ a:focus {
 
 .our_sponsers {
 	position: relative;
+	padding-bottom: 30px;
+	text-align: center;
 	z-index: -1;
 }
 
+.our_sponsers h4 {
+	font-size: 30px;
+	color: #c1c1c1;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
 .our_sponsers img {
-	width: 192px;
-	height: 
-	 -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.52;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	opacity: 0.52;
+	margin-bottom: 40px;
 }
 
 .footer {
@@ -665,6 +676,10 @@ a:focus {
 		font-size: 40px;
 	}
 
+	.players-section {
+		padding-bottom: 20px;
+	}
+
 	.players-section h2 {
 		font-size: 40px;
 		margin-bottom: 0;
@@ -684,6 +699,10 @@ a:focus {
 
 	.news-wrap h3 {
 		font-size: 24px;
+	}
+
+	.our_sponsers {
+		padding-top: 45px;
 	}
 
 	.footer-bottom {
@@ -716,6 +735,10 @@ a:focus {
 
 	.banner .btn-wrap .btn:first-child {
 		margin-right: 15px;
+	}
+
+	.players-section img {
+		bottom: -12px;
 	}
 
 	.about-bg-right {
@@ -757,6 +780,7 @@ a:focus {
 	.contact-us-info h2 {
 		font-size: 28px;
 	}
+
 }
 
 @media(max-width: 767px) {
@@ -784,6 +808,17 @@ a:focus {
 		background: #fff;
 	}
 
+	.main_navbar .navbar-brand {
+		height: 70px;
+	}
+
+	.main_navbar .navbar-toggle {
+		margin-top: 20px;
+	}
+
+	.banner {
+		margin-top: 40px;
+	}
 
 	.about_us {
 		padding: 0;
@@ -830,14 +865,24 @@ a:focus {
 
 	.players-section h2 {
 		font-size: 30px;
+		color: #c1c1c1;
 	}
 
 	.players-section {
-		padding-top: 40px;
+		padding-top: 0;
 	}
 
 	.players-section img {
-		display: none;
+		width: 50%;
+		position: relative;
+		bottom: -14px;
+		left: 0;
+	}
+
+	.players-section .player-header {
+		background: #f5f6f7;
+		margin: 0 -9999px;
+		padding: 40px 9999px 0;
 	}
 
 	.players-section .text-wrap {
@@ -866,6 +911,10 @@ a:focus {
 
 	.newsletter_form .form-control {
 		font-size: 16px;
+	}
+
+	.our_sponsers h4 {
+		font-size: 28px;
 	}
 
 	.footer img {
@@ -907,9 +956,20 @@ a:focus {
 	.banner .btn-wrap .btn {
 		padding: 10px 28px;
 	}
+
+	.players-section img {
+		bottom: -6px;
+	}
+
+	.footer img {
+		height: 60vh
+	}
 }
 
 @media(max-width: 479px) {
+	.home_video_section .video_slider {
+		padding-left: 0;
+	}
 	.footer-bottom .col-xs-4,
 	.footer-bottom .col-xs-8 {
 		width: 100%;
@@ -925,5 +985,9 @@ a:focus {
 
 	.footer-bottom .contact-list {
 		text-align: left;
+	}
+
+	.footer img {
+		height: 40vh;
 	}
 }

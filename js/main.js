@@ -4,10 +4,8 @@ $('#header').scrollToFixed();
 $(document).scroll(function(){
 	if($(document).scrollTop() > 120) {
 		$('#header').addClass('active');
-		$('body').addClass('active-banner');
 	}else {
 		$('#header').removeClass('active');
-		$('body').removeClass('active-banner');
 	}
 });
 
