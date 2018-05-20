@@ -11,6 +11,10 @@ a:focus {
 	outline: none;
 }
 
+.mt {
+	margin-top: 100px;
+}
+
 .btn.active.focus, 
 .btn.active:focus, 
 .btn.focus, 
@@ -26,6 +30,11 @@ a:focus {
 
 .wrapper {
 	overflow: hidden;
+}
+
+.header .main_navbar {
+	background: #0a0d35;
+	padding: 0;
 }
 
 #header.active .main_navbar {
@@ -81,11 +90,24 @@ a:focus {
 	background: #0a0d35;
 }
 
-.banner img {
+.banner img  {
 	width: 100%;
 	object-fit: cover;
 	height: 100vh;
 	opacity: 0.8;
+}
+
+.inner_banner {
+	background: #000;
+	margin-top: 100px;
+}
+
+.inner_banner img {
+	width: 100%;
+	object-fit: cover;
+	object-position: 0 0;
+	height: 100vh;
+	opacity: 0.7;
 }
 
 .banner .center-info {
@@ -230,13 +252,13 @@ a:focus {
 }
 
 /* news section */
-.news-section {
+.news_section {
 	background: #f1f9fe;
 	padding: 40px 0 20px;
 	position: relative;
 }
 
-.news-header h2 {
+.news_header h2 {
 	margin-bottom: 30px;
 	font-size: 60px;
 	font-weight: 700;
@@ -244,7 +266,7 @@ a:focus {
 	text-transform: uppercase;
 }
 
-.news-header h3 {
+.news_header h3 {
 	margin: 20px 40px 0 0;
 	font-size: 40px;
 	font-weight: 700;
@@ -253,18 +275,18 @@ a:focus {
 	text-transform: uppercase;
 }
 
-.news-header .news_arrow {
+.news_header .news_arrow {
 	position: absolute;
 	right: 15px;
 	top: 0;
 }
 
-.news-header img {
+.news_header img {
 	width: auto !important;
 	height: auto !important;
 }
 
-.news-section img {
+.news_section img {
 	width: 100%;
 	height: 350px;
 	margin-bottom: 30px;
@@ -400,14 +422,14 @@ a:focus {
 }
 
 /* players section */
-.players-section {
+.players_section {
 	padding: 80px 0 55px;
 	background: #fff;
 	position: relative;
 	overflow: hidden;
 }
 
-.players-section img {
+.players_section img {
 	width: 100%;
 	position: absolute;
 	bottom: -20px;
@@ -415,7 +437,7 @@ a:focus {
 	z-index: 9;
 }
 
-.players-section h2 {
+.players_section h2 {
 	margin-bottom: 30px;
 	font-size: 60px;
 	font-weight: 700;
@@ -423,11 +445,11 @@ a:focus {
 	text-transform: uppercase;
 }
 
-.players-section .text-wrap {
+.players_section .text-wrap {
 	padding: 50px 0;
 }
 
-.players-section .text-wrap p {
+.players_section .text-wrap p {
 	color: #000;
 	font-size: 16px;
 }
@@ -487,6 +509,8 @@ a:focus {
 	border-radius: 10px;
 }
 
+
+/* Newsletter section */
 .newsletter_section {
 	overflow: hidden;
 }
@@ -532,6 +556,8 @@ a:focus {
 	color: #000;
 }
 
+/* Our sponsers */
+
 .our_sponsers {
 	position: relative;
 	padding-bottom: 30px;
@@ -555,6 +581,231 @@ a:focus {
 	margin-bottom: 40px;
 }
 
+
+/* Team Players */
+.team_section {
+	padding: 40px 0;
+}
+
+.team_section h2 {
+	margin-bottom: 40px;
+	font-size: 60px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.team_section h3 {
+	margin: 40px 0;
+	font-size: 40px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.common_team .thumbnail {
+	position: relative;
+	background: #f8fbfe;
+	color: #000;
+	border: none;
+}
+
+.common_team .thumbnail .media {
+	position: absolute;
+	bottom: 4px;
+	font-size: 40px;
+	line-height: 1;
+	text-align: center;
+	padding: 0;
+}
+
+.common_team .thumbnail:hover .media-left {
+	background: #fdba31;
+}
+
+.common_team .media .media-left {
+	background: #002255;
+	color: #fff;
+	padding: 20px 30px;
+	transition: all 0.2s ease;
+}
+
+.common_team .media .media-heading {
+	line-height: 34px;
+}
+
+/* Player detail */
+.player_detail {
+	margin-bottom: 200px;
+	margin-top: -400px;
+	position: relative;
+	z-index: 9;
+}
+.player_detail .media {
+	margin-bottom: 40px;
+}
+.player_detail .media-object {
+	font-size: 100px;
+	padding: 0 40px;
+	background: #0a0e34;
+	color: #fff;
+}
+
+.player_detail .media-heading {
+	margin-top: 30px;
+	font-size: 50px;
+	line-height: 45px;
+	color: #eaebf4;
+}
+
+.players_status {
+	margin-bottom: 50px;
+	margin-left: -15px;
+	color: #eff0f5;
+}
+
+.players_status li {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.players_status h3 {
+	font-size: 50px;
+	font-weight: 700
+}
+
+.players_status p {
+	font-size: 24px;
+}
+
+.players_status li {
+	display:inline-block;
+	border-right:4px solid;
+	padding:0 15px;
+	position: relative;
+}
+
+.players_status li:before {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 0 solid transparent;
+	border-right: 4px solid #eff0f5;
+	position: absolute;
+	content: '';
+	right: -4px;
+	top: -15px;
+}
+
+.players_status li:after {
+	width: 0; 
+	height: 0; 
+	border-top: 0 solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 4px solid #eff0f5;
+	position: absolute;
+	content: '';
+	right: -4px;
+	bottom: -15px;
+}
+
+.players_status li:last-child {
+	border-right:none;
+}
+
+.players_status li:last-child:before,
+.players_status li:last-child:after {
+	border: none;
+}
+
+.players_info {
+	background: #0d014b;
+	color: #eaebf4;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.players_info h4 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.players_info ul li {
+	overflow: hidden;
+	padding: 10px 0;
+	border-top: 1px solid #eaebf4;
+}
+
+.players_info ul li:first-child {
+	border-width: 4px;
+}
+
+.players_info .left_info {
+	float: left;
+	margin: 0;
+}
+
+.players_info .right_info {
+	float: right;
+	margin: 0;
+}
+
+.player_tab_content h2 {
+	margin: 40px 0;
+	color: #04050c;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.player_tab_content p {
+	color: #04050c;
+	font-size: 18px;
+}
+
+.player_tab_content .list-inline .statics_info {
+	background: #fdba31;
+	padding: 15px 10px;
+}
+
+.player_tab_content .list-inline h4 {
+	font-size: 30px;
+	color: #edeef6;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.player_tab_content .list-inline p {
+	font-size: 16px;
+	color: #edeef6;
+	text-align: center;
+	margin: 0;
+}
+
+#playerTabs>li {
+	width: auto;
+	font-size: 24px;
+}
+
+#playerTabs>li a {
+	color: #eaebf4;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#playerTabs>li a:hover {
+	background: transparent;
+	color: #fdba31;
+}
+
+#playerTabs>li.active>a, 
+#playerTabs>li.active>a:focus, 
+#playerTabs>li.active>a:hover{
+	background: #272b7b;
+	border-radius: 0;
+}
+
+/* Footer */
 .footer {
 	position: relative;
 	overflow: hidden;
@@ -639,6 +890,7 @@ a:focus {
 	text-decoration: none;
 }
 
+/* Media Querys*/
 @media(max-width: 1199px) {
 	.about-us-info h3 span {
 		font-size: 12px;
@@ -664,11 +916,11 @@ a:focus {
 		font-size: 18px;
 	}
 
-	.news-header h2 {
+	.news_header h2 {
 		font-size: 40px;
 	}
 
-	.news-header h3 {
+	.news_header h3 {
 		font-size: 26px;
 	}
 
@@ -676,11 +928,11 @@ a:focus {
 		font-size: 40px;
 	}
 
-	.players-section {
+	.players_section {
 		padding-bottom: 20px;
 	}
 
-	.players-section h2 {
+	.players_section h2 {
 		font-size: 40px;
 		margin-bottom: 0;
 	}
@@ -689,7 +941,7 @@ a:focus {
 		font-size: 24px;
 	}
 
-	.players-section .text-wrap p {
+	.players_section .text-wrap p {
 		font-size: 14px;
 	}
 
@@ -703,6 +955,61 @@ a:focus {
 
 	.our_sponsers {
 		padding-top: 45px;
+	}
+
+	.team_section h2 {
+		font-size: 40px;
+	}
+
+	.team_section h3 {
+		font-size: 30px;
+	}
+
+	.common_team .thumbnail .media {
+		font-size: 30px;
+	}
+
+	.team_section {
+		padding-bottom: 0;
+	}
+
+	.player_detail .media-heading {
+		margin-top: 15px;
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.player_detail .media-object {
+		font-size: 60px;
+	}
+
+	.players_status h3 {
+		font-size: 40px;
+	}
+
+	.players_status p {
+		font-size: 18px;
+	}
+
+	.players_info {
+		font-size: 16px;
+	}
+
+	#playerTabs>li {
+		font-size: 20px;
+	}
+
+	.player_detail {
+		margin-top: -320px;
+	}
+
+	.player_tab_content h2 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.player_tab_content p {
+		font-size: 16px;
 	}
 
 	.footer-bottom {
@@ -737,7 +1044,7 @@ a:focus {
 		margin-right: 15px;
 	}
 
-	.players-section img {
+	.players_section img {
 		bottom: -12px;
 	}
 
@@ -781,9 +1088,54 @@ a:focus {
 		font-size: 28px;
 	}
 
+	#playerTabs {
+		margin-top: 40px;
+		background: #000;
+	}
+
+	.player_tab_content h2 {
+		margin: 30px 0;
+	}
+
 }
 
 @media(max-width: 767px) {
+	.player_tab_content h2 {
+		font-size: 30px;
+	}
+
+	.player_tab_content p {
+		font-size: 14px;
+	}
+
+	#playerTabs>li {
+		float: left;
+	}
+
+	#playerTabs>li a {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.player_tab_content .list-inline .statics_info {
+		margin-bottom: 15px;
+	}
+
+	.player_tab_content .list-inline h4 {
+		font-size: 20px;
+	}
+
+	.player_tab_content .list-inline p {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.players_info h4 {
+		font-size: 20px;
+	}
+	.players_info {
+		font-size: 14px;
+	} 
 	.main_navbar {
 		background: #0a0d35;
 		padding: 0;
@@ -818,6 +1170,10 @@ a:focus {
 
 	.banner {
 		margin-top: 40px;
+	}
+
+	.inner_banner {
+		margin-top: 70px;
 	}
 
 	.about_us {
@@ -863,29 +1219,29 @@ a:focus {
 		font-size: 30px;
 	}
 
-	.players-section h2 {
+	.players_section h2 {
 		font-size: 30px;
 		color: #c1c1c1;
 	}
 
-	.players-section {
+	.players_section {
 		padding-top: 0;
 	}
 
-	.players-section img {
+	.players_section img {
 		width: 50%;
 		position: relative;
 		bottom: -14px;
 		left: 0;
 	}
 
-	.players-section .player-header {
+	.players_section .player-header {
 		background: #f5f6f7;
 		margin: 0 -9999px;
 		padding: 40px 9999px 0;
 	}
 
-	.players-section .text-wrap {
+	.players_section .text-wrap {
 		padding: 30px 0;
 	}
 
@@ -917,6 +1273,24 @@ a:focus {
 		font-size: 28px;
 	}
 
+	.team_section {
+		padding: 0;
+	}
+
+	.team_section h2 {
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+
+	.team_section h3 {
+		font-size: 20px;
+		margin: 0 0 25px;
+	}
+
+	.common_team .thumbnail .media {
+		font-size: 20px;
+	}
+
 	.footer img {
 		height: 50vh;
 	}
@@ -925,26 +1299,63 @@ a:focus {
 		font-size: 24px;
 	}
 
-	.news-header h2 {
+	.news_header h2 {
 		font-size: 30px;
 		margin-bottom: 5px;
 	}
 
-	.news-header h3 {
+	.news_header h3 {
 		font-size: 24px;
 		margin-bottom: 20px;
 	}
 
-	.news-header img {
+	.news_header img {
 		width: 70% !important;
 	}
 
-	.news-header .news_arrow {
+	.news_header .news_arrow {
 		top: -20px;
+	}
+
+	.player_detail {
+		margin-bottom: 100px;
+	}
+
+	.player_detail .media-object {
+		font-size: 40px;
+		padding: 20px 40px; 
+	}
+
+	.player_detail .media-heading {
+		margin-top: 24px;
+		font-size: 24px;
+	}
+
+	.players_status h3 {
+		font-size: 28px;
+	}
+
+	.players_status p {
+		font-size: 14px;
 	}
 }
 
 @media(max-width: 599px) {
+	.players_status {
+		margin-bottom: 15px;
+	}
+	.player_detail .media-object {
+		font-size: 30px;
+		padding: 15px 15px;
+	}
+
+	.player_detail .media-heading {
+		margin-top: 18px;
+		font-size: 18px;
+	}
+	.players_status li {
+		margin-bottom: 20px;
+	}
 	.banner .center-info h2 {
 		font-size: 28px;
 	}
@@ -957,7 +1368,7 @@ a:focus {
 		padding: 10px 28px;
 	}
 
-	.players-section img {
+	.players_section img {
 		bottom: -6px;
 	}
 
