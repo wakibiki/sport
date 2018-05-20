@@ -1,6 +1,17 @@
 // // Header Scroll
 $('#header').scrollToFixed();
 
+(function($){
+  $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+      event.preventDefault(); 
+      event.stopPropagation(); 
+      $(this).parent().siblings().removeClass('open');
+      $(this).parent().toggleClass('open');
+    });
+  });
+})(jQuery);
+
 $(document).scroll(function(){
 	if($(document).scrollTop() > 120) {
 		$('#header').addClass('active');
@@ -46,3 +57,5 @@ $('.video_slider').slick({
 });
 
 $('.matchHeight').matchHeight();
+
+

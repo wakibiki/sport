@@ -77,10 +77,79 @@ a:focus {
 	padding: 0px;
 }
 
+.main_navbar .navbar-nav>.open>a, 
+.main_navbar .navbar-nav>.open>a:focus, 
+.main_navbar .navbar-nav>.open>a:hover {
+	background: transparent;
+	color: #ffbb12;
+}
+
 .main_navbar .navbar-brand>img {
 	height: 100%;
 	padding: 15px;
 	width: auto;
+}
+
+.main_navbar .dropdown-menu {
+	background: #0a0d35;
+	padding: 0;
+	border-radius: 0;
+}
+
+.main_navbar .dropdown-menu li {
+	border-bottom: 1px solid #404361;
+}
+
+.main_navbar .dropdown-menu li:last-child {
+	border-bottom: none;
+}
+
+.main_navbar .dropdown-menu>li>a {
+	padding: 15px 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.main_navbar .dropdown-menu>li>a:focus, 
+.main_navbar .dropdown-menu>li>a:hover {
+	color: #ffbb12;
+	background: #404361;
+}
+
+.main_navbar .carets {
+	position: absolute;
+	top: 24px;
+	right: 15px;
+	transform: rotate(-90deg);
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background: #404361;
+	color: #ffbb12;
+}
+
+/*==========Sub Menu=v==========*/
+.main_navbar .collapse ul > li:hover > a{background: transparent; cursor: pointer;}
+.main_navbar .collapse ul ul > li:hover > a, 
+.main_navbar .open .dropdown-menu > li > a:focus, 
+.main_navbar .open .dropdown-menu > li > a:hover{background: #404361; color:  #ffbb12;}
+.main_navbar .collapse ul ul ul > li:hover > a{background: #404361; color:  #ffbb12;}
+
+
+/******************************Drop-down menu work on hover**********************************/
+.main_navbar{background: none;border: 0 solid;margin: 0;padding: 0;min-height:20px}
+@media only screen and (min-width: 767px) {
+	.main_navbar .collapse ul li{position:relative;}
+	.main_navbar .collapse ul li:hover> ul{display:block}
+	.main_navbar .collapse ul ul{position:absolute;top:100%;left:0;min-width:200px;display:none}
+	/*******/
+	.main_navbar .collapse ul ul li{position:relative}
+	.main_navbar .collapse ul ul li:hover> ul{display:block}
+	.main_navbar .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:200px;display:none}
+	/*******/
+	.main_navbar .collapse ul ul ul li{position:relative}
+	.main_navbar .collapse ul ul ul li:hover ul{display:block}
+	.main_navbar .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:200px;display:none;z-index:1}
 }
 
 /* Banner section */
@@ -593,6 +662,24 @@ a:focus {
 	font-weight: 700;
 	color: #000;
 	text-transform: uppercase;
+	position: relative;
+	background: #fdba31;
+	padding: 15px 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team_section h2:after{
+	content: '';
+	position: absolute;
+	right: -48px;
+	top: 0;
+	width: 0; 
+	height: 0; 
+	border-top: 48px solid transparent;
+	border-bottom: 48px solid transparent;
+
+	border-left: 48px solid #fdba31;
 }
 
 .team_section h3 {
@@ -610,7 +697,22 @@ a:focus {
 	border: none;
 }
 
+.common_team .media-body, 
+.common_team .media-left, 
+.common_team .media-right {
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+.player_detail .media-body,
+.player_detail .media-left, 
+.player_detail .media-right {
+	vertical-align: bottom;
+}
+
 .common_team .thumbnail .media {
+	background: rgba(218, 218, 218, 0.8);
 	position: absolute;
 	bottom: 4px;
 	font-size: 40px;
@@ -621,17 +723,22 @@ a:focus {
 
 .common_team .thumbnail:hover .media-left {
 	background: #fdba31;
+	opacity: 0.8;
 }
 
 .common_team .media .media-left {
-	background: #002255;
+	background: #37134f;
+	font-weight: 700;
 	color: #fff;
 	padding: 20px 30px;
 	transition: all 0.2s ease;
+	opacity: 0.8;
 }
 
 .common_team .media .media-heading {
-	line-height: 34px;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 /* Player detail */
@@ -648,11 +755,12 @@ a:focus {
 	font-size: 100px;
 	padding: 0 40px;
 	background: #0a0e34;
-	color: #fff;
+	color: #fdba31;
+	font-weight: 700;
 }
 
 .player_detail .media-heading {
-	margin-top: 30px;
+	margin: 0;
 	font-size: 50px;
 	line-height: 45px;
 	color: #eaebf4;
@@ -665,48 +773,36 @@ a:focus {
 }
 
 .players_status li {
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 }
 
 .players_status h3 {
 	font-size: 50px;
+	margin-bottom: 15px;
 	font-weight: 700
 }
 
 .players_status p {
 	font-size: 24px;
+	color: #d1caca;
 }
 
 .players_status li {
 	display:inline-block;
-	border-right:4px solid;
-	padding:0 15px;
+	
+	padding:0 60px 0 15px;
 	position: relative;
 }
 
 .players_status li:before {
-	width: 0; 
-	height: 0; 
-	border-top: 15px solid transparent;
-	border-bottom: 0 solid transparent;
-	border-right: 4px solid #eff0f5;
+	width: 30px;
+	height: 30px;
+	border-right: 4px solid #fdba31;
 	position: absolute;
 	content: '';
-	right: -4px;
-	top: -15px;
-}
-
-.players_status li:after {
-	width: 0; 
-	height: 0; 
-	border-top: 0 solid transparent;
-	border-bottom: 15px solid transparent;
-	border-left: 4px solid #eff0f5;
-	position: absolute;
-	content: '';
-	right: -4px;
-	bottom: -15px;
+	right: 35px;
+	top: 8px;
 }
 
 .players_status li:last-child {
@@ -719,25 +815,54 @@ a:focus {
 }
 
 .players_info {
-	background: #0d014b;
+	background: #0a0e34;
 	color: #eaebf4;
 	padding: 20px;
 	font-size: 20px;
 }
 
+.players_info .social_networks {
+	text-align: center;
+	position: relative;
+	top: 15px;
+}
+
+.players_info .social_networks a {
+	color: #fff;
+	transition: all 0.3s ease;
+	padding: 0 15px
+}
+
+.players_info .social_networks a:hover {
+	color: #ffbb12;
+}
+
 .players_info h4 {
 	font-size: 24px;
-	margin-bottom: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	position: relative;
+	color: #fdba31;
+}
+
+.players_info h4:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 4px;
+	background: #fdba31;
 }
 
 .players_info ul li {
 	overflow: hidden;
-	padding: 10px 0;
-	border-top: 1px solid #eaebf4;
+	padding: 20px 0;
+	border-top: 1px solid #404361;
 }
 
 .players_info ul li:first-child {
-	border-width: 4px;
+	border: none;
 }
 
 .players_info .left_info {
@@ -788,7 +913,7 @@ a:focus {
 }
 
 #playerTabs>li a {
-	color: #eaebf4;
+	color: #fdba31;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -801,8 +926,9 @@ a:focus {
 #playerTabs>li.active>a, 
 #playerTabs>li.active>a:focus, 
 #playerTabs>li.active>a:hover{
-	background: #272b7b;
+	background: #82807c;
 	border-radius: 0;
+	color: #eaebf4;
 }
 
 /* Footer */
@@ -892,6 +1018,12 @@ a:focus {
 
 /* Media Querys*/
 @media(max-width: 1199px) {
+	.team_section h2:after {
+		border-top: 37px solid transparent;
+		border-bottom: 37px solid transparent;
+		border-left: 38px solid #fdba31;
+		right: -38px;
+	}
 	.about-us-info h3 span {
 		font-size: 12px;
 	}
@@ -974,7 +1106,6 @@ a:focus {
 	}
 
 	.player_detail .media-heading {
-		margin-top: 15px;
 		font-size: 30px;
 		line-height: 1;
 	}
@@ -1000,7 +1131,7 @@ a:focus {
 	}
 
 	.player_detail {
-		margin-top: -320px;
+		margin-top: -317px;
 	}
 
 	.player_tab_content h2 {
@@ -1090,7 +1221,7 @@ a:focus {
 
 	#playerTabs {
 		margin-top: 40px;
-		background: #000;
+		background: #0d014b;
 	}
 
 	.player_tab_content h2 {
@@ -1100,6 +1231,53 @@ a:focus {
 }
 
 @media(max-width: 767px) {
+	.sub-menu li>a {
+		padding: 10px 10px 10px 50px !important;
+	}
+	.main_navbar .carets {
+		position: absolute;
+		top: inherit;
+		right: 15px;
+		transform: rotate(0deg);
+	}
+
+	.navbar-nav .open .dropdown-menu .dropdown-header, 
+	.navbar-nav .open .dropdown-menu>li>a {
+		padding: 15px 15px 15px 25px;
+	}
+
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+		background: transparent;
+		color: #ffbb12;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #ffbb12;
+		background: transparent; 
+	}
+
+	.main_navbar .dropdown-menu>li>a:focus, 
+	.main_navbar .dropdown-menu>li>a:hover {
+		color: #ffbb12;
+		background: transparent;
+	}
+
+	.team_section h2:after {
+		border-top: 32px solid transparent;
+		border-bottom: 32px solid transparent;
+		border-left: 32px solid #fdba31;
+		right: -32px;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: #fff;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #ffbb12;
+		background: transparent;
+	}
+
 	.player_tab_content h2 {
 		font-size: 30px;
 	}
@@ -1338,9 +1516,20 @@ a:focus {
 	.players_status p {
 		font-size: 14px;
 	}
+
+	.players_status li:before {
+		top: 5px;
+	}
 }
 
 @media(max-width: 599px) {
+	.players_status li:before {
+		top: 3px;
+		right: 10px;
+	}
+	.players_status li {
+		padding: 0 15px;
+	}
 	.players_status {
 		margin-bottom: 15px;
 	}
