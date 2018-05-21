@@ -70,7 +70,7 @@
 
 							<li><a href="#">Videos</a></li>
 							<li><a href="#">CLUB NEWS</a></li>
-							<li><a href="news.html">News</a></li>
+							<li class="news"><a href="news.html">News</a></li>
 							<li><a href="#">SHOP</a></li>
 							<li><a href="#">SPONSERS</a></li>
 						</ul>
@@ -80,120 +80,105 @@
 		</header>
 		
 		<section class="inner_banner">
-			<img src="images/inner_banner.png" alt="player banner">
+			<img src="images/news_banner.png" alt="news banner">
+			<h2 class="center_title color_title">FIXTURES</h2>
 		</section>
 
-		<section class="player_detail">
+		<section class="fixtures_page">
 			<div class="container">
-				<div class="media">
-					<div class="media-left">
-						<div class="media-object">10</div>
-					</div>
-					<div class="media-body">
-						<div class="media-heading">BIMAL <br> GHARTI MAGAR</div>
-					</div>
-				</div>
-
-				<ul class="list-inline players_status">
-					<li>
-						<h3>27</h3>
-						<p>APPEARANCES</p>
-					</li>
-					<li>
-						<h3>3</h3>
-						<p>GOALS</p>
-					</li>
-					<li>
-						<h3>5</h3>
-						<p>ASSETS</p>
-					</li>
-				</ul>
-
 				<div class="row">
-					<div class="col-md-5">
-						<div class="players_info">
-							<h4>PERSONAL INFORMATION</h4>
-							<ul class="list-unstyled">
-								<li>
-									<p class="left_info">Full Name</p>
-									<p class="right_info">Bimal Gharti Magar</p>
-								</li>
-								<li>
-									<p class="left_info">Date of Birth</p>
-									<p class="right_info">28 August 1989 (age 28)</p>
-								</li>
-								<li>
-									<p class="left_info">Birthplace</p>
-									<p class="right_info">Kathmandu,Nepal</p>
-								</li>
-								<li>
-									<p class="left_info">Height</p>
-									<p class="right_info">1.78m (5 ft 10 in)</p>
-								</li>
-								<li>
-									<p class="left_info">Weight</p>
-									<p class="right_info">66 kg</p>
-								</li>
-								<li>
-									<p class="left_info">Position</p>
-									<p class="right_info">Defender</p>
-								</li>
-								<li>
-									<p class="left_info">Number</p>
-									<p class="right_info">27</p>
-								</li>
-								<li>
-									<div class="social_networks">
-										<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-										<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-										<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<div class="col-md-4 fixtures_select_wrap">
+						<div class="row">
+							<div class="col-sm-6">
+								<h4>TEAM</h4>
+								<div class="rail-select">
+									<div class="select-side">
+										<i class="glyphicon glyphicon-menu-down ico"></i>
 									</div>
-								</li>
-							</ul>
+									<select class="form-control" id="sel1">
+										<option>First Team</option>
+										<option>Second Team</option>
+										<option>Third Team</option>
+										<option>Fourth Team</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<h4>COMPETITION</h4>
+								<div class="rail-select">
+									<div class="select-side">
+										<i class="glyphicon glyphicon-menu-down ico"></i>
+									</div>
+									<select class="form-control" id="sel1">
+										<option>All</option>
+										<option>Friendly</option>
+										<option>Semi-Final</option>
+										<option>Final</option>
+									</select>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-7">
-						<ul id="playerTabs" class="nav nav-pills nav-justified" role="tablist" data-tabs="tabs">
-							<li class="active"><a href="#biography" data-toggle="tab">Biography</a></li>
-							<li><a href="#statics" data-toggle="tab">Statics</a></li>
-						</ul>
-						<div class="tab-content player_tab_content">
-							<div role="tabpanel" class="tab-pane fade in active" id="biography">
-								<h2>Biography</h2> 
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-							</div>
-							<div role="tabpanel" class="tab-pane fade" id="statics">
-								<h2>Statics</h2>
+
+					<div class="col-md-8 fixtures_event_wrap">
+						<h2>MAY 2018</h2>
+						<div class="event_item">
+							<div class="event_title">
+								<h4>FRIENDLY</h4>
 								<ul class="list-inline">
-									<li class="col-xs-6 col-sm-3">
-										<div class="statics_info matchHeight">
-											<h4>14</h4> 
-											<p>APPERANCE</p>
-										</div>
-									</li>
-									<li class="col-xs-6 col-sm-3">
-										<div class="statics_info matchHeight">
-											<h4>1901</h4>
-											<p>MINUTES PLAYED</p>
-										</div>
-									</li>
-									<li class="col-xs-6 col-sm-3"> 
-										<div class="statics_info matchHeight">
-											<h4>19</h4>
-											<p>MINUTES PLAYED</p>
-										</div>
-									</li>
-									<li class="col-xs-6 col-sm-3">
-										<div class="statics_info matchHeight">
-											<h4>01</h4>
-											<p>GOALS</p>
-										</div>
-									</li>
+									<li>KATHMANDU  STADIUM</li>
+									<li>29MAY 2018, 04:45 PM</li>
+								</ul>
+							</div>
+							<div class="events_dates">
+								<ul class="list-inline">
+									<li>npc</li>
+									<li><img src="images/npc.png" alt="npc"></li>
+									<li><span>29  FRI</span></li>
+									<li><img src="images/nrc.png" alt="nrc"></li>
+									<li>nrc</li>
 								</ul>
 							</div>
 						</div>
+
+						<div class="event_item">
+							<div class="event_title">
+								<h4>SEMI-FINAL</h4>
+								<ul class="list-inline">
+									<li>KATHMANDU  STADIUM</li>
+									<li>30 MAY 2018, 04:45 PM</li>
+								</ul>
+							</div>
+							<div class="events_dates">
+								<ul class="list-inline">
+									<li>npc</li>
+									<li><img src="images/npc.png" alt="npc"></li>
+									<li><span>30 SAT</span></li>
+									<li><img src="images/nrc.png" alt="nrc"></li>
+									<li>nrc</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="event_item">
+							<div class="event_title">
+								<h4>FINAL</h4>
+								<ul class="list-inline">
+									<li>KATHMANDU  STADIUM</li>
+									<li>31 MAY 2018, 04:45 PM</li>
+								</ul>
+							</div>
+							<div class="events_dates">
+								<ul class="list-inline">
+									<li>npc</li>
+									<li><img src="images/npc.png" alt="npc"></li>
+									<li><span>31 SUN</span></li>
+									<li><img src="images/nrc.png" alt="nrc"></li>
+									<li>nrc</li>
+								</ul>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -294,7 +279,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/jquery-scrolltofixed-min.js"></script>
-	<script src="js/jquery.matchHeight.min.js"></script>	
+	<script src="js/jquery.matchHeight.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
