@@ -545,6 +545,17 @@ a:focus {
 
 .related_news .media {
 	background: #fff;
+	display: flex;
+	flex-wrap: nowrap;
+	transition: all 0.2s ease;
+}
+
+.related_news .media:hover p {
+	color: #ffbb12;
+}
+
+.related_news .media:hover {
+	text-decoration: none;
 }
 
 .related_news .media-body {
@@ -559,7 +570,7 @@ a:focus {
 }
 .related_news .media-left img {
 	width: 100px;
-	height: 100px;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -1096,6 +1107,33 @@ a:focus {
 	color: #eaebf4;
 }
 
+.news_banner .container {
+	position: relative;
+}
+
+.news_banner  .banner_info {
+	position: absolute;
+	bottom: 40px;
+	background: rgba(165,111,51,0.68);
+	left: 0;
+	right: 0;
+	padding: 20px;
+}
+
+.news_banner  .banner_info  p {
+	margin: 0;
+	font-size: 24px;
+	color: #fafafb;
+}
+
+.related_title {
+	color: #0a0e34;
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: -64px;
+	margin-bottom: 20px;
+}
+
 /* fixtures page */
 
 .fixtures_page {
@@ -1334,6 +1372,21 @@ a:focus {
 
 /* Media Querys*/
 @media(max-width: 1199px) {
+	.news_banner .banner_info p {
+		font-size: 20px;
+	}
+	.related_title {
+		font-size: 30px;
+		margin-top: -53px;
+	}
+
+	.latest_updated p {
+		font-size: 18px;
+	}
+
+	.related_news .media-body p {
+		font-size: 14px;
+	}
 	.news_page {
 		padding: 60px 0 20px;
 	}
@@ -1477,6 +1530,23 @@ a:focus {
 }
 
 @media(max-width: 991px) {
+	.news_banner .banner_info {
+		padding: 15px;
+	}
+	.news_banner .banner_info p {
+		font-size: 16px;
+	}
+	.news_detail_item .img_wrap h4 {
+		font-size: 16px;
+	}
+
+	.news_detail {
+    padding: 40px 0 0;
+  }
+
+	.news_detail_item p {
+		font-size: 16px;
+	}
 	.fixtures_event_wrap {
 		margin-top: 40px;
 	}
@@ -1590,7 +1660,6 @@ a:focus {
 		margin-top: 40px;
 		background: #0d014b;
 	}
-
 	.player_tab_content h2 {
 		margin: 30px 0;
 	}
@@ -1598,6 +1667,21 @@ a:focus {
 }
 
 @media(max-width: 767px) {
+	.news_banner .banner_info {
+		bottom: 0;
+	}
+
+	.related_title {
+		margin-top: 0;
+	}
+
+	.latest_updated p {
+		font-size: 16px;
+	}
+
+	.latest_updated .list-inline li a {
+		font-size: 20px;
+	}
 	.fixtures_page {
 		padding-bottom: 40px;
 	}
