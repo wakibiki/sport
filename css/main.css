@@ -175,7 +175,6 @@ a:focus {
 .inner_banner img {
 	width: 100%;
 	object-fit: cover;
-	object-position: 0 0;
 	height: 100vh;
 	opacity: 0.54;
 }
@@ -860,6 +859,9 @@ a:focus {
 	filter: grayscale(100%);
 	opacity: 0.52;
 	margin-bottom: 40px;
+	max-width: 165px;
+	max-height: 90px;
+	object-fit: contain;
 }
 
 /* Team Players */
@@ -905,6 +907,7 @@ a:focus {
 	background: #f8fbfe;
 	color: #000;
 	border: none;
+	padding: 0;
 }
 
 .common_team .media-body, 
@@ -924,7 +927,7 @@ a:focus {
 .common_team .thumbnail .media {
 	background: rgba(218, 218, 218, 0.8);
 	position: absolute;
-	bottom: 4px;
+	bottom: 0;
 	font-size: 40px;
 	line-height: 1;
 	text-align: center;
@@ -1681,6 +1684,9 @@ a:focus {
 }
 
 @media(max-width: 991px) {
+	.our_sponsers img {
+		max-height: 60px;
+	}
 	.contact_page {
 		margin-bottom: 40px;
 	}
